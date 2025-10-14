@@ -1,0 +1,140 @@
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction:column;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container, .logo {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .icon {
+            font-size: 100px;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #888;
+        }
+
+        .logo {
+          padding: 8px 10px 4px 10px;
+          border: 10px solid #000;
+          border-radius: 10px;
+          box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+        }
+        
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        
+        div#content, footer {
+          width: 100%;
+          justify-content: center;
+        }
+        
+        div#content, footer, nav {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        
+        header {
+          width: 200px;
+          height: 100px;
+          margin-top: 0px;
+          line-height: 2;
+        }
+        
+        header > nav {
+          padding-inline: 10px;
+          text-align: center;
+        }
+        
+        div#content {
+          min-height: 600px;
+          background-color: #fff;
+          width: 100%;
+        }
+        
+        footer {
+          height: 50px;
+          font-size:10px;
+          margin:50px;
+        }
+
+        footer > p > a {
+          padding-inline: 20px;
+        }
+        
+        #animate {
+          position: relative;
+          top: 0px;
+          left: 0px;
+        }
+
+        main {
+          width:100%;
+          display:flex;
+          padding-top:10px;
+          flex-direction: row;
+        }
+        
+        .bordereau {
+          background-image:
+          /* top */
+          linear-gradient(to right, black 10%, yellow 10% 20%, black 20% 30%, yellow 30% 40%, black 40% 50%, yellow 50% 60%, black 60% 70%, yellow 70% 80%, black 80% 90%, yellow 90% 100%),
+          /* right */
+          linear-gradient(to bottom, black 10%, yellow 10% 20%, black 20% 30%, yellow 30% 40%, black 40% 50%, yellow 50% 60%, black 60% 70%, yellow 70% 80%, black 80% 90%, yellow 90% 100%),
+          /* bottom */
+          linear-gradient(to right, yellow 10%, black 10% 20%, yellow 20% 30%, black 30% 40%, yellow 40% 50%, black 50% 60%, yellow 60% 70%, black 70% 80%, yellow 80% 90%, black 90% 100%),
+          /* left */
+          linear-gradient(to bottom, yellow 10%, black 10% 20%, yellow 20% 30%, black 30% 40%, yellow 40% 50%, black 50% 60%, yellow 60% 70%, black 70% 80%, yellow 80% 90%, black 90% 100%);
+        
+          background-repeat: no-repeat;
+          background-size: 
+            100% 5px,  /* top: full width, 4px high */
+            5px 100%,  /* right: 4px wide, full height */
+            100% 5px,  /* bottom: full width, 4px high */
+            5px 100%;  /* left: 4px wide, full height */
+        
+          background-position:
+            top left,    /* top bar */
+            top right,   /* right bar */
+            bottom left, /* bottom bar */
+            top left;    /* left bar */
+        
+          border: 1px solid #ccc;
+      }
+    
+span:before {
+    content: "•";
+    padding-right: 5px;
+}
+
+h2, li {
+    font-weight: bold;
+}
