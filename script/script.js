@@ -2,11 +2,29 @@
 
 window.onload = function() {
     document.body.innerHTML = logo(10)
+    document.getElementById('animate').addEventListener("click", function() {
+        myMove();
+    });
+    document.addEventListener('click', function(event) {
+        if (!event.target || !event.target.id) {
+            return;
+        } else if (event.target && event.target.id && event.target.id.startsWith('chart-')) {
+            const index = event.target.id.split('-')[1];
+            chart(Number(index));
+        } else if (event.target && event.target.id && event.target.id.startsWith('site')) {
+            window.location.href = 'https://lienhart-michael.dynamic-dns.net';
+        } else if (event.target && event.target.id && event.target.id.startsWith('form')) {
+            console.log('formulaire de contact');
+        } else if (event.target && event.target.id && event.target.id.startsWith('cv')) {
+            window.location.href = 'https://lienhartm.github.io/CurriculumVitae/';
+        }
+});
+
 };
 
 function logo(m) {
     return `
-        <a href="javascript:myMove()" id="animate" width="${45 * m}" height="${40 * m}">
+        <div id="animate" width="${45 * m}" height="${40 * m}">
             <div class="logo" id="logo" width="${45 * m}" height="${40 * m}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="${45 * m}" height="${40 * m}" viewBox="0 0 ${45 * m} ${40 * m}" fill="none">
                         <!-- Fond -->
@@ -24,7 +42,7 @@ function logo(m) {
                         <rect x="${15* m}"  y="${30 * m}" width="${5 * m}" height="${5 * m}" fill="#c8c8c8" />
                 </svg>
             </div>
-        </a>
+        </div>
     `;
 }
 
@@ -66,15 +84,15 @@ function chart(x) {
                     <li>Editeur du site</li>
                     <p>Nom : <b>Auto-entrepreneur</b><br>
                     Pays d'activité : <b>France</b><br>
-                    Site web : <a href="https://lienhart-michael.dynamic-dns.net">https://lienhart-michael.dynamic-dns.net</a><br>
-                    Adresse e-mail de contact : via le <a href="#">formulaire de contact</a></p>
+                    Site web : <i id='site'>https://lienhart-michael.dynamic-dns.net</i><br>
+                    Adresse e-mail de contact : via le <i id="form">formulaire de contact</i></p>
                     <li>Hébergement du site</li>
-                    <p>Hébergement : Auto-hébergé par LIENHART MICHAEL<br>
-                    Localisation du server : France</p>
+                    <p>Hébergement : Auto-hébergé par <b id='cv'>LIENHART MICHAEL</b><br>
+                    Localisation du server : <b>France</b></p>
                     <li>Responsabilité</li>
                     <p>L'éditeur du site met tout en oeuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Cependant, il ne saurait être tenu responsable d'erreurs ou d'ommisions, ni des résultats pouvant être obtenus par l'usage de ces informations.</p>
                     <li>Propriété intellectuelle</li>
-                    <p>Sauf mention contraire, tous les contenus (textes, images codes, projets, vidéos) présents sur le site sont la propriété exclusive de LIENHART MICHAEL. Toute reproduction, représentation ou diffusion, totale oupartielle, sans autorisation préalable est interdite.</p>
+                    <p>Sauf mention contraire, tous les contenus (textes, images codes, projets, vidéos) présents sur le site sont la propriété exclusive de <b id='cv'>LIENHART MICHAEL</b>. Toute reproduction, représentation ou diffusion, totale oupartielle, sans autorisation préalable est interdite.</p>
                 </ul>
             `;
             break;
@@ -85,14 +103,14 @@ function chart(x) {
                     <li>Collecte des données personnelles</li>
                     <p>Les informations collectées via le formulaire de contact (nom, e-mail, message) sont utilisées uniquement pour répondre aux demandes des utilisateurs. Aucune donnée personnelle n'est transmise à des tiers sans consentement explicite.</p>
                     <li>Responsable du traitement</li>
-                    <p>Responsable : <b>LIENHART MICHAEL</b>, auto-entrepreneur en France</p>
+                    <p>Responsable : <b id='cv'>LIENHART MICHAEL</b>, auto-entrepreneur en <b>France</b></p>
                     <li>Conservation des données</li>
                     <p>Les données envoyées par formulaire sont conservées le temps nécessaire pour traiter la demande, puis supprimées.</p>
                     <li>Cookies et statistiques</li>
                     <p>Le site peut utiliser des cookies techniques ou analytiques afin d'améliorer la navigation et les performances. L'utilisateur peut configurer son navigateur pour refuser les cookies.</p>
                     <li>Droit d'accès, de rectification et de suppression</li>
                     <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données.
-                        Pour exercer ce droit : contactez-moi via le <a href="#">formulaire de contact</a>
+                        Pour exercer ce droit : contactez-moi via le <i id='form'>formulaire de contact</i>
                     </p>
                     <li>Sécurité</li>
                     <p>Le site met en oeuvre des mesures techniques pour protéger les données personnelles contre l'accès non autorisé.</p>
@@ -104,7 +122,7 @@ function chart(x) {
                 <h2>Conditions Générales d'Utilisation (CGU)</h2>
                 <ol>
                     <li>Objet</li>
-                    <p>Les présentes CGU régissent l'accès et l'utilisation du site <a href="#">https://lienhart-michael.dynamic-dns.net</a>.</p>
+                    <p>Les présentes CGU régissent l'accès et l'utilisation du site <i id='site'>https://lienhart-michael.dynamic-dns.net</i>.</p>
                     <li>Acceptation</li>
                     <p>Tout utilisateur accédant au site accepte sans réserve les présentes conditions d'uilisation.</p>
                     <li>Accès au site</li>
@@ -112,7 +130,7 @@ function chart(x) {
                     <li>Contenu</li>
                     <p>Le contenu du site est fourni à titre informatif et peut être modifié à tout moment sans préavis.</p>
                     <li>Liens externes</li>
-                    <p>Des liens vers d'autres sites peuvent être proposés. LIENHART MICHAEL n'est pas responsable du contenu de ces sites tiers.</p>
+                    <p>Des liens vers d'autres sites peuvent être proposés. <b id='cv'>LIENHART MICHAEL</b> n'est pas responsable du contenu de ces sites tiers.</p>
                     <li>Propriété intellectuelle</li>
                     <p>L'ensemble du contenu du site (textes, images, code, logos, etc.) est protégé par le droit d'auteur. Toutes reproduction non autorisée est interdite.</p>
                     <li>Responsabilité de l'utilisateur</li>
@@ -127,9 +145,9 @@ function chart(x) {
                 <h2>Charte de partenariat / collaboration</h2>
                 <ol>
                     <li>Objectif de la charte</li>
-                    <p>Cette charte définit les principes de collaboration entre LIENHART MICHAËL et toutes personne ou organisation ouhaitant coopérer sur des projets numériques (sites web, robotique, IA, etc.).</p>
+                    <p>Cette charte définit les principes de collaboration entre <b>LIENHART MICHAËL</b> et toutes personne ou organisation ouhaitant coopérer sur des projets numériques (sites web, robotique, IA, etc.).</p>
                     <br>
-                    <li>Engagements de LIENHART MICHAEL</li>
+                    <li>Engagements de <b id='cv'>LIENHART MICHAEL</b></li>
                     <p>
                         <span></span>Fournir un travail rigoureux, transparent et conforme aux objectifs du projet.<br>
                         <span></span>Respecter la confidentialité des informations partégées.<br>
@@ -140,7 +158,7 @@ function chart(x) {
                     <p>
                         <span></span>Fournir des informations claires et exactes sur le projet.<br>
                         <span></span>Respecter les délais et la communication convenue.<br>
-                        <span></span>Reconnaître la contribution de LIENHART MICHAEL dans toutes publication ou présentation liée au projet.
+                        <span></span>Reconnaître la contribution de <b id='cv'>LIENHART MICHAEL</b> dans toutes publication ou présentation liée au projet.
                     </p>
                     <br>
                     <li>Confidentialité et propriété</li>
@@ -157,13 +175,13 @@ function chart(x) {
                 <h2>Mentions sur le droit d'auteur</h2>
                 <ol>
                     <li>Propriété intellectuelle</li>
-                    <p>Tout le contenu publié sur le site (textes, images, codes, projets, idées, vidéos, schémas, etc, etc.) est protégé par le <b>Code de la Propirété Intellectuelle</b>.<br>Il appartient exclusivement à <b>LIENHART MICHAEL</b>, sauf mention explicite d'une source externe.</p>
+                    <p>Tout le contenu publié sur le site (textes, images, codes, projets, idées, vidéos, schémas, etc, etc.) est protégé par le <b>Code de la Propirété Intellectuelle</b>.<br>Il appartient exclusivement à <b id='cv'>LIENHART MICHAEL</b>, sauf mention explicite d'une source externe.</p>
                     <li>Licence d'utilisation</li>
                     <p>Sauf indication contraire, les contenus peuvent être partagés à des fins <b>non commerciales</b> à condition de citer clairement l'auteur et la source du site.</p>
                     <li>Interdictions</li>
                     <p>Toutes reproduction, modification, diffusion ou utilisation commerciale du contenu sans autorisation préalable est strictement interdite.</p>
                     <li>Signalement de violation</li>
-                    <p>Toutes personne estimant qu'un contenu du site viole ses droits d'auteur peut en faire la demande de retrait via le <a href="#">formulaire de contact</a>.</p>
+                    <p>Toutes personne estimant qu'un contenu du site viole ses droits d'auteur peut en faire la demande de retrait via le <i id='form'>formulaire de contact</i>.</p>
                 </ol>
             `;
             break;
@@ -175,13 +193,13 @@ function chart(x) {
 function footer() {
     return `
         <footer>
-            <p>
-                <a href="javascript:chart(0)">Mentions légales</a>
-                <a href="javascript:chart(1)">Politique de confidentialité</a>
-                <a href="javascript:chart(2)">Conditions d'utilisation</a>
-                <a href="javascript:chart(3)">Charte partenariat</a>
-                <a href="javascript:chart(4)">Droit d'auteur</a>
-            </p>
+            <nav class="chart">
+                <nav id="chart-0">Mentions légales</nav>
+                <nav id="chart-1">Politique de confidentialité</nav>
+                <nav id="chart-2">Conditions d'utilisation</nav>
+                <nav id="chart-3">Charte partenariat</nav>
+                <nav id="chart-4">Droit d'auteur</nav>
+            </nav>
             <h6>LM - 2025</h6>
         </footer>
     `;
