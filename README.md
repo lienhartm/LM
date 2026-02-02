@@ -21,3 +21,5 @@ git push -u origin main
 openssl dgst -sha256 -binary style/style.css | openssl base64 -A
 openssl dgst -sha256 -binary script/script.js | openssl base64 -A
 openssl dgst -sha256 -binary favicon_io/site.webmanifest | openssl base64 -A
+
+
