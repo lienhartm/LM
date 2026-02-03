@@ -40,7 +40,7 @@
 >* Le contenu est injecté dynamiquement dans le DOM (`innerHTML`)
 >* La navigation s’effectue sans rechargement de page
 >* Les sections principales sont accessibles via un menu clair :
->  
+>*
 >  * Présentation
 >  * Parcours
 >  * Projets
