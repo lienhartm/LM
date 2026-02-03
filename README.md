@@ -41,10 +41,10 @@
 >* La navigation s’effectue sans rechargement de page
 >* Les sections principales sont accessibles via un menu clair :
 >
->  * Présentation
->  * Parcours
->  * Projets
->  * Contact
+>    * Présentation
+>    * Parcours
+>    * Projets
+>    * Contact
 >* Un pied de page regroupe les pages légales et informatives (RGPD, CGU, mentions légales, etc.)
 >
 >Cette approche garantit **rapidité**, **simplicité** et **contrôle total du comportement du site**.
