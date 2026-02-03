@@ -1,7 +1,13 @@
 'use strict'
 
 window.onload = function () {
-    document.body.innerHTML = logo(10)
+    document.body.innerHTML = `
+        <div id="scene">
+            <div id="card">
+            ${logo(10)}
+            </div>
+        </div>
+    `;
     document.getElementById('animate').addEventListener("click", function () {
         // myMove();
         myClick();
