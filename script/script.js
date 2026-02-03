@@ -9,8 +9,15 @@ window.onload = function () {
         </div>
     `;
     document.getElementById('animate').addEventListener("click", function () {
-        // myMove();
-        myClick();
+        const body = document.querySelector('body');
+        body.style.background = "#F8F8F8";
+        body.innerHTML = `
+                ${header()}
+                <main>
+                    ${main()}
+                </main>
+                ${footer()}
+        `;
     });
     document.addEventListener('click', function (event) {
         document.getElementById('content').style.backgroundColor = '#fff';
@@ -358,28 +365,3 @@ function main() {
         </div>
     `;
 }
-
-// Affiche webpage
-function webpage() {
-    const body = document.querySelector('body');
-    body.style.background = "#F8F8F8";
-    body.innerHTML = `
-            ${header()}
-            <main>
-                ${main()}
-            </main>
-            ${footer()}
-    `;
-}
-
-function blank() {
-    const body = document.querySelector('body');
-    body.style.background = "#F8F8F8";
-    body.innerHTML = "";
-    webpage();
-}
-
-function myClick() {
-    blank();
-}
-
