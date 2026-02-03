@@ -115,4 +115,4 @@
 >
 >
 >
->#### LIENHART MICHAEL - 2026 - LM 
+>#### LIENHART MICHAEL - 2026 - LM &copy;
