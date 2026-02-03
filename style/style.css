@@ -119,6 +119,43 @@ footer {
     left: 0px;
 }
 
+#scene {
+    perspective: 1200px;
+}
+
+#card {
+    display: inline-block;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    animation: pivot-then-flip 5s infinite;
+}
+
+/* animation */
+@keyframes pivot-then-flip {
+    /* position initial */
+    0%   { transform: rotate(0deg)   rotateY(0deg);   }
+    /* rotation pivot */
+    10%  { transform: rotate(90deg)  rotateY(90deg);   }
+    /* rotation pivot */
+    20%  { transform: rotate(180deg) rotateY(180deg);   }
+    /* rotation pivot */
+    30%  { transform: rotate(270deg) rotateY(270deg);   }
+    /* position initial */
+    40%  { transform: rotate(360deg) rotateY(360deg);   }
+    /* pause */
+    50%  { transform: rotate(360deg) rotateY(0deg);   }
+    /* rotation flip */
+    60%  { transform: rotate(360deg) rotateY(90deg);  }
+    /* rotatio flip */
+    70%  { transform: rotate(360deg) rotateY(180deg); }
+    /* rotation flip */
+    80%  { transform: rotate(360deg) rotateY(270deg); }
+    /* position initial */
+    90%  { transform: rotate(360deg) rotateY(360deg); }
+    /* pause */
+    100% { transform: rotate(360deg) rotateY(360deg); }
+}
+
 main {
     width: 100%;
     display: flex;
