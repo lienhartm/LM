@@ -1,6 +1,7 @@
 * {
     color: inherit;
     background-color: inherit;
+    box-sizing: border-box;
 }
 
 nav[id^="page-"]:hover {
@@ -119,6 +120,76 @@ footer {
     left: 0px;
 }
 
+#scene {
+    perspective: 1200px;
+}
+
+#card {
+    display: inline-block;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    animation: pivot-then-flip 5s infinite;
+}
+
+/* animation */
+@keyframes pivot-then-flip {
+
+    /* position initial */
+    0% {
+        transform: rotate(0deg) rotateY(0deg);
+    }
+
+    /* rotation pivot */
+    10% {
+        transform: rotate(90deg) rotateY(90deg);
+    }
+
+    /* rotation pivot */
+    20% {
+        transform: rotate(180deg) rotateY(180deg);
+    }
+
+    /* rotation pivot */
+    30% {
+        transform: rotate(270deg) rotateY(270deg);
+    }
+
+    /* position initial */
+    40% {
+        transform: rotate(360deg) rotateY(360deg);
+    }
+
+    /* pause */
+    50% {
+        transform: rotate(360deg) rotateY(0deg);
+    }
+
+    /* rotation flip */
+    60% {
+        transform: rotate(360deg) rotateY(90deg);
+    }
+
+    /* rotatio flip */
+    70% {
+        transform: rotate(360deg) rotateY(180deg);
+    }
+
+    /* rotation flip */
+    80% {
+        transform: rotate(360deg) rotateY(270deg);
+    }
+
+    /* position initial */
+    90% {
+        transform: rotate(360deg) rotateY(360deg);
+    }
+
+    /* pause */
+    100% {
+        transform: rotate(360deg) rotateY(360deg);
+    }
+}
+
 main {
     width: 100%;
     display: flex;
@@ -199,7 +270,7 @@ tr:hover {
 }
 
 .field {
-    margin:10px;
+    margin: 10px;
 }
 
 input[type="text"] {
@@ -207,17 +278,38 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-    padding:5px;
+    padding: 5px;
 }
 
 .submit {
-    display:flex;
-    justify-content:center;
-    margin-top:50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .form {
     border-left: 5px solid #808080;
     transition: background-color 0.3s;
     padding-left: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-left: 75%;
+    margin-top: 25px;
+}
+
+.box {
+    float: left;
+}
+
+.message {
+    margin: 70px;
+}
+
+.space {
+    height: 100px;
 }
