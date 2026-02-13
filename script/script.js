@@ -30,7 +30,7 @@ window.onload = function () {
             const index = event.target.id.split('-')[1];
             page(Number(index));
         } else if (event.target && event.target.id && event.target.id.startsWith('site')) {
-            window.location.href = 'https://lienhart-michael.dynamic-dns.net';
+            window.location.href = 'https://github.io/lienhartm/LM/';
         }
     });
 };
