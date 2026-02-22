@@ -30,7 +30,7 @@ window.onload = function () {
             const index = event.target.id.split('-')[1];
             page(Number(index));
         } else if (event.target && event.target.id && event.target.id.startsWith('site')) {
-            window.location.href = 'https://lienhart-michael.dynamic-dns.net';
+            window.location.href = 'https://github.io/lienhartm/LM/';
         }
     });
 };
@@ -94,7 +94,7 @@ function chart(x) {
                         <b>France</b>
                         <br>
                         Site web : 
-                        <i id='site'>https://lienhartm.github.io/LM/</i>
+                        <i id='site'>https://lienhartm.github.io/lm/</i>
                         <br>
                         Adresse e-mail de contact : via le 
                         <i id="form">formulaire de contact</i>
@@ -145,7 +145,7 @@ function chart(x) {
                     <li>Objet</li>
                     <p>
                         Les présentes CGU régissent l'accès et l'utilisation du site 
-                        <i id='site'>https://lienhartm.github.io/LM/</i>
+                        <i id='site'>https://lienhartm.github.io/lm/</i>
                         .
                     </p>
                     <li>Acceptation</li>
@@ -357,12 +357,13 @@ function page(x) {
                 <div class="text"></div>
                 <p>D'autres petits travaux ont été rendu pour des associations ou entreprise comme :</p>
                 <ul>
-                    <li>Questionnaire - Association Caritas - HTML,CSS,JS,PHP,SQL</li>
-                    <li>CRM - Design Concept - HTML,CSS,JS,REACT,Svelt,C++,SQL</li>
-                    <li>Suivi Evenement Sportif - Hopla Cup - HTML,CSS,JS,PHP,SQL</li>
+                    <li>Questionnaire - Association Caritas - Docker,HTML,CSS,JS,PHP,SQL</li>
+                    <li>CRM - Design Concept - Docker,HTML,CSS,JS,REACT,Svelt,C++,SQL</li>
+                    <li>Suivi Evenement Sportif - Hopla Cup - Wordparess,HTML,CSS,JS,PHP,SQL</li>
                     <li>Gestion locative - Cavalons - HTML,CSS,JS,Go,PostgreSQL</li>
                     <li>Gestion administrative - Génération Mouvement 68 - HTML,CSS,JS</li>
-                    <li>EasyBetMe - MonWebPro - HTML,CSS,JS,PHP,SQL</li>
+                    <li>Gamification - EasyBetMe - Docker,HTML,CSS,JS,PHP,SQL</li>
+                    <li>Gestion locative - InsoliteSPA68 - HTML,CSS,JS,PHP</li>
                 </ul>
                 <img src="image/company.png" alt="company" width="80">
                 <p>Puis des projet personnel comme :</p>
@@ -427,7 +428,7 @@ function page(x) {
                     <div class="space"></div>
                     <h2>Supportez-moi !</h2>
                     <figure class="box">
-                        <img src='http://localhost/Website/website_1/image/buymeacoffee.png' alt='buymeacoffee' width='400'>
+                        <img src='https://lienhartm.github.io/lm/image/buymeacoffee.png' alt='buymeacoffee' width='400'>
                         <figcaption>
                             <a href="https://www.buymeacoffee.com/ewzwS4LfCh" target="_blank">
                                 <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 200px !important;">
