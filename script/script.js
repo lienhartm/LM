@@ -59,7 +59,7 @@ function logo(m) {
     `;
 }
 
-// Affiche header
+// Affiche header # Navigation
 function header() {
     return `
         <header>
@@ -76,6 +76,7 @@ function header() {
     `;
 }
 
+// Affiche footer # Mentions légales
 function chart(x) {
     var chart = '';
     var main = document.getElementById('content');
@@ -256,6 +257,7 @@ function chart(x) {
     main.innerHTML = chart;
 }
 
+// Affiche page # Présentation
 function page(x) {
     var page = '';
     var main = document.getElementById('content');
@@ -270,6 +272,7 @@ function page(x) {
                 </p>
                 <br>
                 <p>
+                    <img class="left" src="image/coding.png" alt="coding" width="80">
                     Mon parcours s’est construit à la croisée du 
                     <b>développement logiciel</b>
                     , de l’
@@ -282,6 +285,7 @@ function page(x) {
                 </p>
                 <br>
                 <p>
+                    <img class="right" src="image/interest.png" alt="interest" width="80">
                     Je m’intéresse particulièrement aux projets où la technique sert un 
                     <b>objectif concret</b>
                      : événementiel, médiation, mémoire, innovation locale ou industrielle. Le projet de photobooth que je développe actuellement en est un bon exemple : un système autonome, robuste, pensé pour fonctionner dans le monde réel, sans dépendre de solutions opaques ou surdimensionnées.
@@ -312,18 +316,22 @@ function page(x) {
             page = `
                 <h2>Parcours</h2>
                 <p>M'étant formé dans le domaine du numérique et de l’informatique, avec un parcours orienté vers le développement logiciel, les systèmes, les réseaux et la cybersécurité.</p>
-                <p>J'ai suivi le parcours Graduate – Technicien supérieur systèmes, réseaux et cybersécurité au sein de Studi Formation, me permettant de consolider des compétences en administration système, réseaux, sécurité informatique et bonnes pratiques professionnelles dans un environnement structuré.</p>
                 <p>
-                    Son parcours académique s’inscrit dans une progression cohérente au sein des métiers de l’informatique, avec une spécialisation en 
+                    <img class="left" src="image/academy.png" alt="academy" width="80">
+                    J'ai suivi le parcours Graduate – Technicien supérieur systèmes, réseaux et cybersécurité au sein de Studi Formation, me permettant de consolider des compétences en administration système, réseaux, sécurité informatique et bonnes pratiques professionnelles dans un environnement structuré.</p>
+                <p>
+                    <img class="right" src="image/roadmap.png" alt="roadmap" width="80">
+                    Mon parcours académique s’inscrit dans une progression cohérente au sein des métiers de l’informatique, avec une spécialisation en 
                     <b>conception, développement et tests de logiciels</b>
-                    . Il a suivi sa formation à l’
+                    . J'ai suivi sa formation à l’
                     <b>UHA 4.0 – Université de Haute-Alsace (Mulhouse)</b>
-                    , où il a acquis des bases solides en programmation, développement web, architecture du web et technologies modernes, dans un cadre pédagogique s’appuyant sur la 
+                    , où j'ai acquis des bases solides en programmation, développement web, architecture du web et technologies modernes, dans un cadre pédagogique s’appuyant sur la 
                     <b>méthodologie Agile</b>
                      et le 
                      <b>framework Scrum</b>
                      .
                 </p>
+                <p>Lors de ma formation en développement web et web mobile à Elan Formation, j’ai suivi un parcours individualisé de trois mois vers les métiers du développement informatique, adapté à mes besoins, qui m’a permis d’acquérir de l’expérience en maquettage, modélisation UML et conception de sites web, tout en me formant et en pratiquant activement le développement web et web mobile.</p>
                 <p>Il dispose de compétences techniques étendues, couvrant :</p>
                 <ul>
                     <li>les langages de programmation : HTML, CSS, JavaScript, PHP, SQL, Java (notions),</li>
@@ -332,9 +340,13 @@ function page(x) {
                     <li>la gestion de projet et le travail collaboratif : Jira, Confluence, Slack, Jitsi,</li>
                     <li>ainsi que plusieurs certifications (Pix, bases Java, bases de données, architecture du web, développement côté client).</li>
                 </ul>
-                <p>Ses expériences professionnelles dans le numérique incluent des stages en développement web et en transformation numérique, au cours desquels il a participé à la création de sites web, au développement de fonctionnalités, à l’amélioration de l’expérience utilisateur et à la collaboration avec des équipes pédagogiques et techniques.</p>
-                <p>Il a conduit et développé de nombreux projets numériques concrets, tels que des applications de gestion (devis/facturation, questionnaires, audits, tournois sportifs), des outils métiers, ainsi que des sites web fonctionnels, démontrant sa capacité à concevoir, développer et mettre en œuvre des solutions adaptées aux besoins réels.</p>
-                <p>Son profil se distingue par une forte polyvalence, une approche structurée, une capacité d’adaptation, et une volonté d’évoluer dans les métiers de l’informatique et du numérique.</p>
+                <p>
+                    <img class="left" src="image/competence.png" alt="competence" width="80">
+                    Mes expériences professionnelles dans le numérique incluent des stages en développement web et en transformation numérique, au cours desquels il a participé à la création de sites web, au développement de fonctionnalités, à l’amélioration de l’expérience utilisateur et à la collaboration avec des équipes pédagogiques et techniques.</p>
+                <p>
+                    <img class="right" src="image/work.png" alt="work" width="80">
+                    J'ai pu conduire et développer de nombreux projets numériques concrets, tels que des applications de gestion (devis/facturation, questionnaires, audits, tournois sportifs), des outils métiers, ainsi que des sites web fonctionnels, démontrant sa capacité à concevoir, développer et mettre en œuvre des solutions adaptées aux besoins réels.</p>
+                <p>Mon profil se distingue par une forte polyvalence, une approche structurée, une capacité d’adaptation, et une volonté d’évoluer dans les métiers de l’informatique et du numérique.</p>
             `;
             break;
         case 3:
@@ -352,6 +364,7 @@ function page(x) {
                     <li>Gestion administrative - Génération Mouvement 68 - HTML,CSS,JS</li>
                     <li>EasyBetMe - MonWebPro - HTML,CSS,JS,PHP,SQL</li>
                 </ul>
+                <img src="image/company.png" alt="company" width="80">
                 <p>Puis des projet personnel comme :</p>
                 <ul>
                     <li>Website : Délices de nos rivières - HTML,CSS,JS</li>
@@ -361,7 +374,8 @@ function page(x) {
                     <li>Jeu : Survivor - HTML,CSS,JS</li>
                     <li>Mini diapo auto de pésentation : Epicur Persolo - HTML,CSS,JS</li>
                 </ul>
-                <p>Des projets FabLab' au Technistub :</p>
+                <img src="image/electronics.png" alt="electronics" width="80">
+                <p>Et des projets FabLab' au Technistub :</p>
                 <ul>
                     <li>Régie Makerfight</li>
                     <li>PhotoBooth</li>

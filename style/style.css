@@ -313,3 +313,15 @@ figcaption {
 .space {
     height: 100px;
 }
+
+.left {
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+}
+
+.right {
+    float: right;
+    margin-left: 10px;
+    width: 80px;
+}
