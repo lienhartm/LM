@@ -492,33 +492,46 @@ function page(x) {
             break;
         case 3:
             page = `
-                <h2>
-                    <u>Projets</u>
-                </h2>
-                <div class="text"></div>
-                <p>D'autres petits travaux ont été rendu pour des associations ou entreprise comme :</p>
-                <ul>
-                    <li>Questionnaire - Association Caritas - Docker,HTML,CSS,JS,PHP,SQL</li>
-                    <li>CRM - Design Concept - Docker,HTML,CSS,JS,REACT,Svelt,C++,SQL</li>
-                    <li>Suivi Evenement Sportif - Hopla Cup - Wordparess,HTML,CSS,JS,PHP,SQL</li>
-                    <li>Gestion locative - Cavalons - HTML,CSS,JS,Go,PostgreSQL</li>
-                    <li>Gestion administrative - Génération Mouvement 68 - HTML,CSS,JS</li>
-                    <li>Gamification - EasyBetMe - Docker,HTML,CSS,JS,PHP,SQL</li>
-                    <li>Gestion locative - InsoliteSPA68 - HTML,CSS,JS,PHP</li>
+                <h2 id="projets-title"><u>Projets</u></h2>
+                
+                <div class="text" aria-hidden="true"></div>
+                
+                <p aria-labelledby="projets-title">
+                    D'autres petits travaux ont été rendus pour des associations ou entreprises comme :
+                </p>
+                
+                <ul aria-labelledby="projets-title">
+                    <li>Questionnaire - Association Caritas - Docker, HTML, CSS, JS, PHP, SQL</li>
+                    <li>CRM - Design Concept - Docker, HTML, CSS, JS, REACT, Svelte, C++, SQL</li>
+                    <li>Suivi Evenement Sportif - Hopla Cup - WordPress, HTML, CSS, JS, PHP, SQL</li>
+                    <li>Gestion locative - Cavalons - HTML, CSS, JS, Go, PostgreSQL</li>
+                    <li>Gestion administrative - Génération Mouvement 68 - HTML, CSS, JS</li>
+                    <li>Gamification - EasyBetMe - Docker, HTML, CSS, JS, PHP, SQL</li>
+                    <li>Gestion locative - InsoliteSPA68 - HTML, CSS, JS, PHP</li>
                 </ul>
-                <img src="image/company.png" alt="company" width="80">
-                <p>Puis des projet personnel comme :</p>
-                <ul>
-                    <li>Website : Délices de nos rivières - HTML,CSS,JS</li>
-                    <li>Website : BasketBall - HTML,CSS,JS,REACT,PHP,SQL</li>
+                
+                <img src="image/company.png" alt="Icône entreprise" width="80" aria-hidden="false">
+                
+                <p aria-labelledby="projets-title">
+                    Puis des projets personnels comme :
+                </p>
+                
+                <ul aria-labelledby="projets-title">
+                    <li>Website : Délices de nos rivières - HTML, CSS, JS</li>
+                    <li>Website : BasketBall - HTML, CSS, JS, REACT, PHP, SQL</li>
                     <li>Jeu : MasterMind - Java Spring Boot, H2O</li>
-                    <li>Cloud : BlocNote - HTML,CSS,JS,REACT,MongoDB</li>
-                    <li>Jeu : Survivor - HTML,CSS,JS</li>
-                    <li>Mini diapo auto de pésentation : Epicur Persolo - HTML,CSS,JS</li>
+                    <li>Cloud : BlocNote - HTML, CSS, JS, REACT, MongoDB</li>
+                    <li>Jeu : Survivor - HTML, CSS, JS</li>
+                    <li>Mini diapo auto de présentation : Epicur Persolo - HTML, CSS, JS</li>
                 </ul>
-                <img src="image/electronics.png" alt="electronics" width="80">
-                <p>Et des projets FabLab' au Technistub :</p>
-                <ul>
+                
+                <img src="image/electronics.png" alt="Icône électronique" width="80" aria-hidden="false">
+                
+                <p aria-labelledby="projets-title">
+                    Et des projets FabLab' au Technistub :
+                </p>
+                
+                <ul aria-labelledby="projets-title">
                     <li>Régie Makerfight</li>
                     <li>PhotoBooth</li>
                     <li>Makerfight</li>
