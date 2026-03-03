@@ -440,40 +440,55 @@ function page(x) {
             break;
         case 2:
             page = `
-                <h2>Parcours</h2>
-                <p>M'étant formé dans le domaine du numérique et de l’informatique, avec un parcours orienté vers le développement logiciel, les systèmes, les réseaux et la cybersécurité.</p>
-                <p>
-                    <img class="left" src="image/academy.png" alt="academy" width="80">
-                    J'ai suivi le parcours Graduate – Technicien supérieur systèmes, réseaux et cybersécurité au sein de Studi Formation, me permettant de consolider des compétences en administration système, réseaux, sécurité informatique et bonnes pratiques professionnelles dans un environnement structuré.</p>
-                <p>
-                    <img class="right" src="image/roadmap.png" alt="roadmap" width="80">
-                    Mon parcours académique s’inscrit dans une progression cohérente au sein des métiers de l’informatique, avec une spécialisation en 
-                    <b>conception, développement et tests de logiciels</b>
-                    . J'ai suivi sa formation à l’
-                    <b>UHA 4.0 – Université de Haute-Alsace (Mulhouse)</b>
-                    , où j'ai acquis des bases solides en programmation, développement web, architecture du web et technologies modernes, dans un cadre pédagogique s’appuyant sur la 
-                    <b>méthodologie Agile</b>
-                     et le 
-                     <b>framework Scrum</b>
-                     .
+                <h2 id="parcours-title">Parcours</h2>
+                
+                <p aria-labelledby="parcours-title">
+                    M'étant formé dans le domaine du numérique et de l’informatique, avec un parcours orienté vers le développement logiciel, les systèmes, les réseaux et la cybersécurité.
                 </p>
-                <p>Lors de ma formation en développement web et web mobile à Elan Formation, j’ai suivi un parcours individualisé de trois mois vers les métiers du développement informatique, adapté à mes besoins, qui m’a permis d’acquérir de l’expérience en maquettage, modélisation UML et conception de sites web, tout en me formant et en pratiquant activement le développement web et web mobile.</p>
-                <p>Il dispose de compétences techniques étendues, couvrant :</p>
-                <ul>
+                
+                <p aria-labelledby="parcours-title">
+                    <img class="left" src="image/academy.png" alt="Icône académie" width="80" aria-hidden="false">
+                    J'ai suivi le parcours Graduate – Technicien supérieur systèmes, réseaux et cybersécurité au sein de Studi Formation, me permettant de consolider des compétences en administration système, réseaux, sécurité informatique et bonnes pratiques professionnelles dans un environnement structuré.
+                </p>
+                
+                <p aria-labelledby="parcours-title">
+                    <img class="right" src="image/roadmap.png" alt="Icône roadmap" width="80" aria-hidden="false">
+                    Mon parcours académique s’inscrit dans une progression cohérente au sein des métiers de l’informatique, avec une spécialisation en 
+                    <b>conception, développement et tests de logiciels</b>. J'ai suivi sa formation à l’
+                    <b>UHA 4.0 – Université de Haute-Alsace (Mulhouse)</b>, où j'ai acquis des bases solides en programmation, développement web, architecture du web et technologies modernes, dans un cadre pédagogique s’appuyant sur la 
+                    <b>méthodologie Agile</b> et le 
+                    <b>framework Scrum</b>.
+                </p>
+                
+                <p aria-labelledby="parcours-title">
+                    Lors de ma formation en développement web et web mobile à Elan Formation, j’ai suivi un parcours individualisé de trois mois vers les métiers du développement informatique, adapté à mes besoins, qui m’a permis d’acquérir de l’expérience en maquettage, modélisation UML et conception de sites web, tout en me formant et en pratiquant activement le développement web et web mobile.
+                </p>
+                
+                <p aria-labelledby="parcours-title">
+                    Il dispose de compétences techniques étendues, couvrant :
+                </p>
+                
+                <ul aria-labelledby="parcours-title">
                     <li>les langages de programmation : HTML, CSS, JavaScript, PHP, SQL, Java (notions),</li>
                     <li>les frameworks et outils : React, Next.js, Svelte, WordPress, Symfony, Spring,</li>
                     <li>les environnements et outils professionnels : Linux, Git, Docker,</li>
                     <li>la gestion de projet et le travail collaboratif : Jira, Confluence, Slack, Jitsi,</li>
                     <li>ainsi que plusieurs certifications (Pix, bases Java, bases de données, architecture du web, développement côté client).</li>
                 </ul>
-                <p>
-                    <img class="left" src="image/competence.png" alt="competence" width="80">
-                    Mes expériences professionnelles dans le numérique incluent des stages en développement web et en transformation numérique, au cours desquels il a participé à la création de sites web, au développement de fonctionnalités, à l’amélioration de l’expérience utilisateur et à la collaboration avec des équipes pédagogiques et techniques.</p>
-                <p>
-                    <img class="right" src="image/work.png" alt="work" width="80">
-                    J'ai pu conduire et développer de nombreux projets numériques concrets, tels que des applications de gestion (devis/facturation, questionnaires, audits, tournois sportifs), des outils métiers, ainsi que des sites web fonctionnels, démontrant sa capacité à concevoir, développer et mettre en œuvre des solutions adaptées aux besoins réels.</p>
-                <p>Mon profil se distingue par une forte polyvalence, une approche structurée, une capacité d’adaptation, et une volonté d’évoluer dans les métiers de l’informatique et du numérique.</p>
-            `;
+                
+                <p aria-labelledby="parcours-title">
+                    <img class="left" src="image/competence.png" alt="Icône compétence" width="80" aria-hidden="false">
+                    Mes expériences professionnelles dans le numérique incluent des stages en développement web et en transformation numérique, au cours desquels il a participé à la création de sites web, au développement de fonctionnalités, à l’amélioration de l’expérience utilisateur et à la collaboration avec des équipes pédagogiques et techniques.
+                </p>
+                
+                <p aria-labelledby="parcours-title">
+                    <img class="right" src="image/work.png" alt="Icône travail" width="80" aria-hidden="false">
+                    J'ai pu conduire et développer de nombreux projets numériques concrets, tels que des applications de gestion (devis/facturation, questionnaires, audits, tournois sportifs), des outils métiers, ainsi que des sites web fonctionnels, démontrant sa capacité à concevoir, développer et mettre en œuvre des solutions adaptées aux besoins réels.
+                </p>
+                
+                <p aria-labelledby="parcours-title">
+                    Mon profil se distingue par une forte polyvalence, une approche structurée, une capacité d’adaptation, et une volonté d’évoluer dans les métiers de l’informatique et du numérique.
+                </p>            `;
             break;
         case 3:
             page = `
