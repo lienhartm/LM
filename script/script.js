@@ -216,32 +216,56 @@ function chart(x) {
             break;
         case 2:
             chart = `
-                <h2>Conditions Générales d'Utilisation (CGU)</h2>
-                <ol>
-                    <li>Objet</li>
-                    <p>
+                <h2 id="cgu-title">Conditions Générales d'Utilisation (CGU)</h2>
+                
+                <ol aria-labelledby="cgu-title">
+                
+                    <li id="objet">Objet</li>
+                    <p aria-labelledby="objet">
                         Les présentes CGU régissent l'accès et l'utilisation du site 
-                        <i id='site'>https://lienhartm.github.io/lm/</i>
-                        .
+                        <i id="site" aria-label="Adresse du site web">
+                            https://lienhartm.github.io/lm/
+                        </i>.
                     </p>
-                    <li>Acceptation</li>
-                    <p>Tout utilisateur accédant au site accepte sans réserve les présentes conditions d'uilisation.</p>
-                    <li>Accès au site</li>
-                    <p>L'accès est libre et gratuit. Le site peut être temporairement suspendu pour maintenance ou mise à jour.</p>
-                    <li>Contenu</li>
-                    <p>Le contenu du site est fourni à titre informatif et peut être modifié à tout moment sans préavis.</p>
-                    <li>Liens externes</li>
-                    <p>
+                
+                    <li id="acceptation">Acceptation</li>
+                    <p aria-labelledby="acceptation">
+                        Tout utilisateur accédant au site accepte sans réserve les présentes conditions d'utilisation.
+                    </p>
+                
+                    <li id="acces">Accès au site</li>
+                    <p aria-labelledby="acces">
+                        L'accès est libre et gratuit. Le site peut être temporairement suspendu pour maintenance ou mise à jour.
+                    </p>
+                
+                    <li id="contenu">Contenu</li>
+                    <p aria-labelledby="contenu">
+                        Le contenu du site est fourni à titre informatif et peut être modifié à tout moment sans préavis.
+                    </p>
+                
+                    <li id="liens">Liens externes</li>
+                    <p aria-labelledby="liens">
                         Des liens vers d'autres sites peuvent être proposés. 
-                        <b id='cv'>LIENHART MICHAEL</b>
-                         n'est pas responsable du contenu de ces sites tiers.
+                        <b id="cv">LIENHART MICHAEL</b>
+                        n'est pas responsable du contenu de ces sites tiers.
                     </p>
-                    <li>Propriété intellectuelle</li>
-                    <p>L'ensemble du contenu du site (textes, images, code, logos, etc.) est protégé par le droit d'auteur. Toutes reproduction non autorisée est interdite.</p>
-                    <li>Responsabilité de l'utilisateur</li>
-                    <p>L'utilisateur s'engage à ne pas perturber le bon fonctionnement du site ni tenter d'accéder à des zones non autorisées.</p>
-                    <li>Droit applicable</li>
-                    <p>Les présentes CGU sont soumises au droit français.</p>
+                
+                    <li id="propriete">Propriété intellectuelle</li>
+                    <p aria-labelledby="propriete">
+                        L'ensemble du contenu du site (textes, images, code, logos, etc.) est protégé par le droit d'auteur. 
+                        Toute reproduction non autorisée est interdite.
+                    </p>
+                
+                    <li id="responsabilite-user">Responsabilité de l'utilisateur</li>
+                    <p aria-labelledby="responsabilite-user">
+                        L'utilisateur s'engage à ne pas perturber le bon fonctionnement du site ni tenter d'accéder à des zones non autorisées.
+                    </p>
+                
+                    <li id="droit">Droit applicable</li>
+                    <p aria-labelledby="droit">
+                        Les présentes CGU sont soumises au droit français.
+                    </p>
+                
                 </ol>
             `;
             break;
