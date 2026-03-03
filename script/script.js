@@ -115,10 +115,12 @@ function chart(x) {
     switch (x) {
         case 0:
             chart = `
-                <h2>Mentions légales</h2>
-                <ul>
-                    <li>Editeur du site</li>
-                    <p>
+                <h2 id="mentions-title">Mentions légales</h2>
+                
+                <ul aria-labelledby="mentions-title">
+                
+                    <li id="editeur">Editeur du site</li>
+                    <p aria-labelledby="editeur">
                         Nom : 
                         <b>Auto-entrepreneur</b>
                         <br>
@@ -126,20 +128,38 @@ function chart(x) {
                         <b>France</b>
                         <br>
                         Site web : 
-                        <i id='site'>https://lienhartm.github.io/lm/</i>
+                        <i id="site" aria-label="Adresse du site web">
+                            https://lienhartm.github.io/lm/
+                        </i>
                         <br>
                         Adresse e-mail de contact : via le 
-                        <i id="form">formulaire de contact</i>
+                        <i id="form" role="link" tabindex="0" aria-label="Accéder au formulaire de contact">
+                            formulaire de contact
+                        </i>
                     </p>
-                    <li>Hébergement du site</li>
-                    <p>
-                        Hébergement : Auto-hébergé par <b id='cv'>LIENHART MICHAEL</b><br>
-                        Localisation du server : <b>France</b>
+                
+                    <li id="hebergement">Hébergement du site</li>
+                    <p aria-labelledby="hebergement">
+                        Hébergement : Auto-hébergé par 
+                        <b id="cv" aria-label="Nom de l'hébergeur">
+                            LIENHART MICHAEL
+                        </b><br>
+                        Localisation du server : 
+                        <b>France</b>
                     </p>
-                    <li>Responsabilité</li>
-                    <p>L'éditeur du site met tout en oeuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Cependant, il ne saurait être tenu responsable d'erreurs ou d'ommisions, ni des résultats pouvant être obtenus par l'usage de ces informations.</p>
-                    <li>Propriété intellectuelle</li>
-                    <p>Sauf mention contraire, tous les contenus (textes, images codes, projets, vidéos) présents sur le site sont la propriété exclusive de <b id='cv'>LIENHART MICHAEL</b>. Toute reproduction, représentation ou diffusion, totale oupartielle, sans autorisation préalable est interdite.</p>
+                
+                    <li id="responsabilite">Responsabilité</li>
+                    <p aria-labelledby="responsabilite">
+                        L'éditeur du site met tout en oeuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Cependant, il ne saurait être tenu responsable d'erreurs ou d'ommisions, ni des résultats pouvant être obtenus par l'usage de ces informations.
+                    </p>
+                
+                    <li id="propriete">Propriété intellectuelle</li>
+                    <p aria-labelledby="propriete">
+                        Sauf mention contraire, tous les contenus (textes, images codes, projets, vidéos) présents sur le site sont la propriété exclusive de 
+                        <b id="cv">LIENHART MICHAEL</b>. 
+                        Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable est interdite.
+                    </p>
+                
                 </ul>
             `;
             break;
