@@ -664,7 +664,7 @@ function footer() {
 // Affiche section
 function main() {
     return `
-        <div id="content">
+        <div id="content" role="region" aria-label="Logo principal du site">
             ${logo(10)}
         </div>
     `;
