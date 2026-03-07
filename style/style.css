@@ -323,3 +323,13 @@ figcaption {
     float: right;
     margin-left: 10px;
 }
+
+.sr-only {
+  font-size: 12px;
+}
+
+.sr-only::before {
+  content: "*";
+  padding-inline: 10px;
+}
+
