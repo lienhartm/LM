@@ -580,9 +580,11 @@ function page(x) {
                             <div class="submit">
                                 <input type="submit" id="button" value="Envoyer le courriel" aria-label="Envoyer le formulaire de contact">
                             </div>
-                            <span id="form-instructions" class="sr-only">
+                            <br>
+                            <br>
+                            <p id="form-instructions" class="sr-only">
                                 Tous les champs sont obligatoires. Merci de remplir correctement le formulaire avant soumission.
-                            </span>
+                            </p>
                         </form>
                     </div>
                 
