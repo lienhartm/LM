@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 * {
     color: inherit;
     background-color: inherit;
@@ -18,7 +20,7 @@ nav[id^="chart-"]:hover {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -423,4 +425,53 @@ figcaption {
         margin-top: 50px;
     }
 
+}
+
+/* Buy Me A Coffee Custom Button */
+.bmc-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: #FFDD00;
+    color: #000000;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    z-index: 9999;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+    border: 2px solid #000000;
+}
+
+.bmc-button:hover {
+    transform: scale(1.08) translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color: #000000;
+    background-color: #ffea00;
+}
+
+.bmc-button span {
+    margin-right: 10px;
+    font-size: 24px;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+@media only screen and (max-width: 600px) {
+    .bmc-button {
+        bottom: 15px;
+        right: 15px;
+        height: 45px;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    
+    .bmc-button span {
+        font-size: 20px;
+    }
 }
