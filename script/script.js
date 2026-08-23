@@ -651,7 +651,7 @@ function page(x) {
                       </p>
 
                       <div class="cv-action">
-                          <a href="./image/cv_michael_lienhart.pdf" target="_blank" class="cv-button" aria-label="Voir le curriculum vitae de lienhart michael">
+                          <a href="./image/cv_lienhart_michael.pdf" target="_blank" class="cv-button" aria-label="Voir le curriculum vitae de lienhart michael">
                             Voir le CV
                           </a>
                         
