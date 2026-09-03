@@ -12,7 +12,9 @@ window.onload = function () {
         const body = document.querySelector('body');
         body.style.background = "#F8F8F8";
         body.innerHTML = `
-            ${header()}
+            <a href="javascript:location.reload();" aria-label="Website logo">
+                ${logo(4)}
+            </a>
             <main role="main" aria-label="Contenu principal du site">
                 ${main()}
             </main>
@@ -133,6 +135,7 @@ function header() {
 function chart(x) {
     var chart = '';
     var main = document.getElementById('content');
+
     switch (x) {
         case 0:
             chart = `
@@ -141,33 +144,36 @@ function chart(x) {
                 <ul aria-labelledby="mentions-title">
                 
                     <li id="editeur">Editeur du site</li>
-                    <p aria-labelledby="editeur">
-                        Nom : 
+                    <address aria-labelledby="editeur">
+                        <p>Nom : 
                         <b>Auto-entrepreneur</b>
-                        <br>
-                        Pays d'activité : 
+                        </p>
+                        <p>Pays d'activité : 
                         <b>France</b>
-                        <br>
-                        Site web : 
+                        </p>
+                        <p>Site web : 
                         <i id="site" aria-label="Adresse du site web">
                             https://lienhartm.github.io/lm/
                         </i>
-                        <br>
-                        Adresse e-mail de contact : via le 
+                        </p>
+                        <p>Adresse e-mail de contact : via le 
                         <i id="form" role="link" tabindex="0" aria-label="Accéder au formulaire de contact">
                             formulaire de contact
                         </i>
-                    </p>
+                        </p>
+                    </address>
                 
                     <li id="hebergement">Hébergement du site</li>
-                    <p aria-labelledby="hebergement">
-                        Hébergement : Auto-hébergé par 
+                    <address aria-labelledby="hebergement">
+                        <p>Hébergement : Auto-hébergé par 
                         <b id="cv" aria-label="Nom de l'hébergeur">
                             LIENHART MICHAEL
-                        </b><br>
-                        Localisation du server : 
+                        </b>
+                        </p>
+                        <p>Localisation du server : 
                         <b>France</b>
-                    </p>
+                        </p>
+                    </address>
                 
                     <li id="responsabilite">Responsabilité</li>
                     <p aria-labelledby="responsabilite">
@@ -302,38 +308,29 @@ function chart(x) {
                         <b>LIENHART MICHAËL</b>
                         et toute personne ou organisation souhaitant coopérer sur des projets numériques (sites web, robotique, IA, etc.).
                     </p>
-                    <br>
                 
                     <li id="engagement-lienhart">
                         Engagements de 
                         <b id="cv">LIENHART MICHAEL</b>
                     </li>
-                    <p aria-labelledby="engagement-lienhart">
-                        <span></span>Fournir un travail rigoureux, transparent et conforme aux objectifs du projet.
-                        <br>
-                        <span></span>Respecter la confidentialité des informations partagées.
-                        <br>
-                        <span></span>Favoriser l'esprit de collaboration, la transmission de connaissances et l'innovation.
-                    </p>
-                    <br>
+                    <div aria-labelledby="engagement-lienhart">
+                        <p><span></span>Fournir un travail rigoureux, transparent et conforme aux objectifs du projet.</p>
+                        <p><span></span>Respecter la confidentialité des informations partagées.</p>
+                        <p><span></span>Favoriser l'esprit de collaboration, la transmission de connaissances et l'innovation.</p>
+                    </div>
                 
                     <li id="engagement-partenaire">Engagements du partenaire</li>
-                    <p aria-labelledby="engagement-partenaire">
-                        <span></span>Fournir des informations claires et exactes sur le projet.
-                        <br>
-                        <span></span>Respecter les délais et la communication convenue.
-                        <br>
-                        <span></span>Reconnaître la contribution de <b id="cv">LIENHART MICHAEL</b> dans toute publication ou présentation liée au projet.
-                    </p>
-                    <br>
+                    <div aria-labelledby="engagement-partenaire">
+                        <p><span></span>Fournir des informations claires et exactes sur le projet.</p>
+                        <p><span></span>Respecter les délais et la communication convenue.</p>
+                        <p><span></span>Reconnaître la contribution de <b id="cv">LIENHART MICHAEL</b> dans toute publication ou présentation liée au projet.</p>
+                    </div>
                 
                     <li id="confidentialite">Confidentialité et propriété</li>
                     <p aria-labelledby="confidentialite">
                         Les codes, prototypes, ou documents produits restent la propriété de leur auteur, sauf accord écrit contraire.
-                        <br>
                         Toute collaboration repose sur le respect mutuel des droits de chacun.
                     </p>
-                    <br>
                 
                     <li id="ethique">Ethique et transparence</li>
                     <p aria-labelledby="ethique">
@@ -350,13 +347,12 @@ function chart(x) {
                 <ol aria-labelledby="droit-title">
                 
                     <li id="propriete">Propriété intellectuelle</li>
-                    <p aria-labelledby="propriete">
-                        Tout le contenu publié sur le site (textes, images, codes, projets, idées, vidéos, schémas, etc.) est protégé par le 
-                        <b>Code de la Propriété Intellectuelle</b>.
-                        <br>
-                        Il appartient exclusivement à 
-                        <b id="cv">LIENHART MICHAEL</b>, sauf mention explicite d'une source externe.
-                    </p>
+                    <div aria-labelledby="propriete">
+                        <p>Tout le contenu publié sur le site (textes, images, codes, projets, idées, vidéos, schémas, etc.) est protégé par le 
+                        <b>Code de la Propriété Intellectuelle</b>.</p>
+                        <p>Il appartient exclusivement à 
+                        <b id="cv">LIENHART MICHAEL</b>, sauf mention explicite d'une source externe.</p>
+                    </div>
                 
                     <li id="licence">Licence d'utilisation</li>
                     <p aria-labelledby="licence">
@@ -381,6 +377,11 @@ function chart(x) {
             `;
             break;
         case 5:
+            //const body = document.querySelector('body');
+            //body.insertAdjacentHTML('afterbegin', header());
+            chart = `${header()}`;
+            break;
+        case 6:
             chart = `
                 <div class="container bordereau" role="region" aria-labelledby="construction-title" aria-describedby="construction-message">
                 
@@ -396,6 +397,7 @@ function chart(x) {
                 
                 </div>
             `;
+            break;
     }
     main.innerHTML = chart;
 }
@@ -407,6 +409,7 @@ function page(x) {
     switch (x) {
         case 1:
             page = `
+                ${header()}
                 <h1 id="presentation-title"><u>Présentation</u></h1>
 
                 <br>
@@ -476,6 +479,7 @@ function page(x) {
             break;
         case 2:
             page = `
+                ${header()}
                 <h1 id="parcours-title"><u>Parcours</u></h1>
 
                 <br>
@@ -570,6 +574,7 @@ function page(x) {
             break;
         case 3:
             page = `
+                ${header()}
                 <h1 id="projets-title"><u>Projets</u></h1>
 
                 <br>
@@ -634,6 +639,7 @@ function page(x) {
             break;
         case 4:
             page = `
+                ${header()}
                 <h1 id="contact-title"><u>Contact</u></h1>
 
                 <br>
@@ -651,11 +657,11 @@ function page(x) {
                       </p>
 
                       <div class="cv-action">
-                          <a href="./image/cv_lienhart_michael.pdf" target="_blank" class="cv-button" aria-label="Voir le curriculum vitae de lienhart michael">
+                          <a href="./image/cv_michael_lienhart.pdf" target="_blank" class="cv-button" aria-label="Voir le curriculum vitae de lienhart michael">
                             Voir le CV
                           </a>
                         
-                          <a href="./image/cv_lienhart_michael.pdf" target="_blank" download class="cv-button" aria-label="Télécharger le currculum vitae de lienhart michael">
+                          <a href="./image/cv_michael_lienhart.pdf" target="_blank" download class="cv-button" aria-label="Télécharger le currculum vitae de lienhart michael">
                             Télécharger mon CV (PDF)
                           </a>
                       </div>
@@ -784,6 +790,7 @@ function footer() {
                 <nav id="chart-2" role="link" aria-label="Conditions d'utilisation">Conditions d'utilisation</nav>
                 <nav id="chart-3" role="link" aria-label="Charte partenariat">Charte partenariat</nav>
                 <nav id="chart-4" role="link" aria-label="Droit d'auteur">Droit d'auteur</nav>
+                <nav id="chart-5" role="link" aria-label="WebMaster">WebMaster</nav>
             </nav>
         
             <h5 id="chart-5">
@@ -798,7 +805,18 @@ function footer() {
 function main() {
     return `
         <div id="content" role="region" aria-label="Logo principal du site">
-            ${logo(10)}
+            <div class="container bordereau" role="region" aria-labelledby="construction-title" aria-describedby="construction-message">
+    
+                <div class="icon" aria-hidden="true">&#128679;</div> <!-- Icône décorative -->
+            
+                <h2 id="construction-title">Page en construction</h2>
+            
+                <p>Nous travaillons dur pour rendre cette page disponible bientôt.</p>
+            
+                <div class="message" id="construction-message">
+                    Merci de votre patience !
+                </div>
+            </div>
         </div>
     `;
 }
